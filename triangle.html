@@ -1,0 +1,43 @@
+<style>
+/*         #player {
+            margin: 32px;
+            position: relative;
+            width: 400px;
+            height: 250px;
+            background-color: #222;
+        } */
+
+            #inner {
+            background-color: silver;
+            width: 140px;
+            height: 140px;
+            top: -100px;
+            left: 0;
+            transform: rotate(45deg);
+            position: relative;
+            border-radius: 15px;
+        }
+
+            #outer {
+            position: relative;
+            width: 140px;
+            height: 140px;
+            overflow: hidden;
+              background: red;
+              margin: auto;
+        }
+
+span.triText {
+      position: absolute;
+    transform: rotate(-45deg);
+    top: 77%;
+    left: 71%;
+}
+</style>
+<div id="player">
+  <div id="outer">
+    <div id="inner">
+      <span class="triText">$56</span>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+
+<html>
+
+	<head>
+    
+    	<style>
+		
+			.test h2{
+				background: red;
+			}
+			.test h2:nth-of-type(even){
+				background: yellow;
+				padding: 5%;
+			}
+			
+			.test-flex {
+				display: flex;
+				flex-wrap: wrap;	
+			}
+			.test-flex h2 {
+				background: #2d2d2d;
+				padding: 2%;
+				border: 1px solid white;
+				box-sizing:border-box;	
+				flex-basis: 25%;
+			}
+			
+			.test-flex h2:nth-of-type(even) {
+				background-color: #939;
+			}
+			
+			
+			.test-flex h2:nth-of-type(2) {
+				order: 0;	
+			}
+			.test-flex h2:nth-of-type(3) {
+				order: 1;	
+			}
+		</style>
+    
+    </head>
+
+  <body>
+
+    <div class="wrapper">
+
+      <div class="test">
+
+        <h2 class="zero">THIS IS A TEST BLOCK1</h2>
+        <h2 class="orderChange">THIS IS THE SECOND TEXT2</h2>
+        <h2 class="two">THIS IS THE THIRD BLOCK3</h2>
+        <h2 class="three">THIS IS THE SECOND TEXT4</h2>        
+
+      </div>
+      
+      <hr />
+      <div class="test-flex">
+
+        <h2 class="zero">THIS IS A TEST BLOCK 1</h2>
+        <h2 class="orderChange">THIS IS THE SECOND TEXT 2</h2>
+        <h2 class="two">THIS IS THE THIRD BLOCK 3</h2>
+        <h2 class="three">THIS IS THE SECOND TEXT 4</h2>           
+
+      </div>
+
+    </div>
+
+  </body>
+
+</html>
